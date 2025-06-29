@@ -1,0 +1,606 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    cursor: url(../images/cursor.png) 1 1, auto;
+  }
+
+/* Главная страница */
+/* меню */
+.header {
+    width: 100%;
+    height: 6vw;
+    background-color: #FF4C90;
+    display: grid;
+    place-items: center;
+    padding: 0 7vw;
+    box-sizing: border-box;
+}
+
+.header-inner {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    gap: 8vw; 
+}
+
+a {
+    font-family: "font-regular";
+    text-decoration: none;
+    color: #FFE2E2;
+    font-size: 1.2vw;
+    cursor: url(../images/cursor.png) 1 1, auto; 
+    z-index: 10; 
+  }
+
+.rene_pink {
+    font-family: "font-regular2";
+    color: #FF4C90;
+
+}
+
+.rene_purple {
+    font-family: "font-regular2";
+    color: #8194F2;
+
+}
+
+
+.logo {
+    height: 6vw;
+    width: 13vw;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../images/logo.svg");
+}
+
+/* баннер */
+.banner_1 {
+    width: 100%;
+    height: 53vw;
+    background-color: #FFBFD7;
+    display: grid;
+    place-items: center;
+
+}
+
+.pic1 {
+    height: 50vw;
+    width: 80vw;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../images/pic1.png");
+
+}
+
+/* шахматы */
+.check1 {
+    height: 8.7vw;
+    width: 100%;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-image: url("../images/check_1.svg");
+
+}
+
+/* блок 2 */
+.block2 {
+    width: 100%;
+    height: 30vw;
+    background-color: #FF4C90;
+    display: grid;
+    place-items: center;
+
+}
+
+.oval {
+    width: 70vw;
+    height: 20vw;
+    border-radius: 50%; 
+    border: 0.20vw solid #8194F2; 
+    background-color: #FFE2E2;
+    display: grid;
+    place-items: center;
+    
+}
+
+p {
+    font-family: "font-regular";
+    text-decoration: none;
+    color: #000000;
+    font-size: 2vw;
+    width: 80%;
+    text-align: center;
+}
+
+.pink_text {
+    color: #FF4C90;
+}
+
+/* блок 3 */
+.block3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    justify-items: center;
+    align-items: center;
+    gap: 2vw;
+    padding: 2vw 0;
+    background-color: #CDD5FD;
+    width: 100%;
+    height: 40vw;
+}
+
+.img-wrapper {
+    width: 40vw;
+    height: 30vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pic2, .pic3, .pic5, .pic6, .pic8, .pic9, .pic10, .pic11, .pic12 {
+    width: 40vw;
+    height: 30vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+   
+}
+
+.pic2 {
+    background-image: url('../images/pic2.png');
+}
+
+.pic3 {
+    background-image: url('../images/pic3.png');
+}
+
+.pic5 {
+    background-image: url('../images/pic5.png');
+}
+
+.pic6 {
+    background-image: url('../images/pic6.png');
+}
+
+/* шахматы 2 */
+.check2 {
+    height: 8.7vw;
+    width: 100%;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-image: url("../images/check_2.svg");
+
+}
+
+/* бегущая строка */
+.line_container {
+    width: 100%;
+    height: 4vw;
+    overflow: hidden;
+    background: #FFE2E2;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .run_line {
+    display: inline-block;
+    white-space: nowrap;
+    font-family: "font-regular";
+    font-size: 2vw;
+    color: #FF4C90;
+    animation: scroll 20s linear infinite;
+  }
+
+  @keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* товары */
+.items {
+    width: 100%;
+    height: 26vw;
+    overflow: hidden;
+    background: #FFBFD7;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .line_of_items {
+    display: flex;
+    gap: 2vw;
+    animation: scrollItems 30s linear infinite;
+  }
+  
+  .item {
+    height: 20vw;
+    width: 18vw;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+    border-radius: 1vw;
+  }
+  
+  .item1 { background-image: url('../images/item1.png'); }
+  .item2 { background-image: url('../images/item2.png'); }
+  .item3 { background-image: url('../images/item3.png'); }
+  .item4 { background-image: url('../images/item4.png'); }
+  .item5 { background-image: url('../images/item5.png'); }
+  .item6 { background-image: url('../images/item6.png'); }
+  .item7 { background-image: url('../images/item7.png'); }
+  
+  @keyframes scrollItems {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(1%);
+    }
+  }
+
+  /* Оверлей */
+.fullscreen-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  /* Увеличенная картинка */
+  .fullscreen-image {
+    width: 80vw;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transition: transform 0.4s ease;
+  }
+
+/* второе описание */
+.block4 {
+    width: 100%;
+    height: 30vw;
+    background-color: #8194F2;
+    display: grid;
+    place-items: center;
+
+}
+
+.oval {
+    width: 70vw;
+    height: 20vw;
+    border-radius: 50%; 
+    border: 0.20vw solid #FF4C90; 
+    background-color: #FFE2E2;
+    display: grid;
+    place-items: center;
+    
+}
+
+p {
+    font-family: "font-regular";
+    text-decoration: none;
+    color: #000000;
+    font-size: 2vw;
+    width: 80%;
+    text-align: center;
+}
+
+.pink_text {
+    color: #FF4C90;
+}
+
+.purple_text {
+    color: #8194F2;
+}
+
+/* блок 5 */
+.block5 {
+    width: 100%;
+    height: 53vw;
+    background-color: #FFBFD7;
+    display: grid;
+    place-items: center;
+
+}
+
+.pic4 {
+    height: 50vw;
+    width: 80vw;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../images/pic4.png");
+
+}
+
+/* бегущая строка */
+  .run_line2 {
+    display: inline-block;
+    white-space: nowrap;
+    font-family: "font-regular", sans-serif;
+    font-size: 2vw;
+    color: #8194F2;
+    animation: scroll 20s linear infinite;
+  }
+
+  /* подвал */
+.basement {
+    height: 9vw;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 2vw;
+    padding-left: 1%;
+    background-color: #FFBFD7;
+  }
+  
+  .pink_describe {
+    font-family: "font-regular";
+    font-size: 1.2vw;
+    color: #FF4C90;
+    text-align: left;
+  }
+  
+  .form_block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: -25%;
+  }
+  
+  .email_form {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+  }
+
+  .email_wrapper {
+    position: relative;
+    width: 28vw;
+    height: 5vw;
+    background-image: url('../images/back_email.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .email_wrapper input {
+    position: absolute;
+    top: 50%;
+    left: 2vw;
+    transform: translateY(-50%);
+    width: 18vw;
+    height: 2.5vw;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-family: "font-regular";
+    font-size: 1.5vw;
+    color: #FF4C90;
+    z-index: 2;
+    pointer-events: auto; 
+  }
+  
+  .email_wrapper input::placeholder {
+    color: #FF4C90;
+    opacity: 0.6;
+  }
+  
+  .submit_btn {
+    position: absolute;
+    left: 87%;
+    transform: translateX(-50%);
+    width: 20vw;
+    height: 4.5vw;
+    background-image: url('../images/btn.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    border: none;
+    font-family: "font-regular";
+    font-size: 1vw;
+    color: #ffffff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* о здании */
+  /* блок 1 */
+  .pic7 {
+    height: 50vw;
+    width: 80vw;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../images/pic7.png");
+
+}
+
+/* сетка изображений */
+.pictures_block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    justify-items: center;
+    align-items: center;
+    gap: 2vw;
+    padding: 2vw 0;
+    background-color: #FFBFD7;
+    width: 100%;
+    height: 40vw;
+}
+
+.pic11  {
+    display: grid;
+    width: 40vw;
+    height: 30vw;
+    place-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.pic8 {
+    background-image: url('../images/pic8.png');
+}
+
+.pic9 {
+    background-image: url('../images/pic9.png');
+}
+
+.pic10 {
+    background-image: url('../images/pic10.png');
+}
+
+.pic11 {
+    background-image: url('../images/pic11.png');
+}
+
+.pic12 {
+    background-image: url('../images/pic12.png');
+}
+
+.pic_text {
+    font-family: "font-regular";
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.6vw;
+    width: 80%;
+    text-align: center;
+    line-height: 120%;
+
+}
+
+.banner_final {
+    width: 100%;
+    height: 53vw;
+    background-color: #FFBFD7;
+    display: grid;
+    place-items: center;
+
+}
+
+.pic13 {
+    height: 50vw;
+    width: 80vw;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../images/pic13.png");
+
+}
+
+ /* подвал 2 */
+ .basement2 {
+    height: 9vw;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 2vw;
+    padding-left: 1%;
+    background-color: #CDD5FD;
+  }
+  
+  .purple_describe {
+    font-family: "font-regular";
+    font-size: 1.2vw;
+    color: #8194F2;
+    text-align: left;
+  }
+  
+  .email_wrapper2 {
+    position: relative;
+    width: 28vw;
+    height: 5vw;
+    background-image: url('../images/back_email2.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .email_wrapper2 input   {
+    position: absolute;
+    top: 50%;
+    left: 2vw;
+    transform: translateY(-50%);
+    width: 18vw;
+    height: 2.5vw;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-family: "font-regular";
+    font-size: 1.5vw;
+    color: #8194F2;
+    z-index: 2;
+    pointer-events: auto; 
+  }
+  
+  .email_wrapper2 input::placeholder {
+    color: #8194F2;
+    opacity: 0.6;
+  }
+  
+  .submit_btn2 {
+    position: absolute;
+    left: 87%;
+    transform: translateX(-50%);
+    width: 20vw;
+    height: 4.5vw;
+    background-image: url('../images/btn2.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    border: none;
+    font-family: "font-regular";
+    font-size: 1vw;
+    color: #ffffff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+    .back404 {
+        background-color: #FFBFD7;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh; 
+      }
+
+.text_404 {
+        font-family: "font-regular2";
+        text-decoration: none;
+        color: #FF4C90;
+        font-size: 20vw;
+    
+    }
+    

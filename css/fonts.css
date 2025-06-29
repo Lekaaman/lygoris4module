@@ -1,0 +1,13 @@
+@font-face  {
+    font-family: "font-regular";
+    src: url("../fonts/Involve-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face  {
+    font-family: "font-regular2";
+    src: url("../fonts/Rene-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
